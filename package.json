@@ -1,0 +1,31 @@
+{
+  "name": "image-search",
+  "version": "1.0.0",
+  "description": "FCC Image Search Abstraction Layer API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garrickg/image-search.git"
+  },
+  "keywords": [
+    "fcc",
+    "api",
+    "express"
+  ],
+  "author": "Garrick Gunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garrickg/image-search/issues"
+  },
+  "homepage": "https://github.com/garrickg/image-search#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11",
+    "pug": "^2.0.0-beta6",
+    "validator": "^6.1.0"
+  }
+}

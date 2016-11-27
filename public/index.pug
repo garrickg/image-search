@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title URL Shortener Microservice Landing Page
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/style.css')
+  body
+    .col-md-8.col-md-offset-2
+      h1 URL Shortener Microservice
+      hr
+      h2 User Story:
+      ul
+        li
+          | I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+        li
+          | If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+        li When I visit that shortened URL, it will redirect me to my original link.
+      h2 Example Creation Input
+      code
+        a(href='/new/http://www.google.com') #{url}/new/http://www.google.com
+      h2 Example Creation Output
+      code
+        | { "original_url":"http://www.google.com", "short_url":"#{url}/1000" }
+      h2 Example Usage
+      code
+        a(href='/1000') #{url}/1000
+      |  redirects to 
+      code
+        a(href='http://www.google.com') http://www.google.com
+      hr
+      p
+        | This was completed as an API project for the FreeCodeCamp Back End Certification, check out the details 
+        a(href='https://www.freecodecamp.com/challenges/url-shortener-microservice', target='_blank') here
+        | .
+      footer
+        a(href='https://github.com/garrickg', target='_blank')
+          i.fa.fa-2x.fa-github(aria-hidden='true')
+        a(href='http://codepen.io/garrickg/', target='_blank')
+          i.fa.fa-2x.fa-codepen(aria-hidden='true')
+        a(href='https://www.freecodecamp.com/garrickg', target='_blank')
+          i.fa.fa-2x.fa-free-code-camp(aria-hidden='true')
+    script(src='https://use.fontawesome.com/1dd1d70e46.js')

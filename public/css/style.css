@@ -1,0 +1,16 @@
+footer {
+	float: right;
+}
+
+code a, code a:hover, code a:focus, code a:visited {
+	color: #c7254e;
+}
+
+i {
+	color: black;
+	margin-left: 10px;
+}
+
+code {
+	padding: 0;
+}
